@@ -27,8 +27,8 @@ This file contains references and external resources that inform our analyses.
   dependencies.
 - [_Dependency Resolution in Python: Beware The Phantom Dependency_][phantom] by Anand Sawant is where the term _phantom
   dependency_ was originally coined.
-- [Issue #1261][ecosystems-packages-1261] on the <a href="https://ecosyste.ms" class="suplink">ecosyste.ms</a> _packages_
-  repo collects more information on strategies for tracking binary dependencies across multiple package managers.
+- [Issue #1261][ecosystems-packages-1261] on the [ecosyste.ms](https://ecosyste.ms) _packages_ repo collects more
+  information on strategies for tracking binary dependencies across multiple package managers.
 - [_ESSTRA_][esstra] is a tool developed at Sony that aims to improve supply chain transparency by embedding metadata
   into binaries.
 - [UAPI specification 8][uapi-8] provides a section within ELF binaries for recording the provenance of a dynamic
@@ -47,9 +47,9 @@ This file contains references and external resources that inform our analyses.
   does not yet have accurate human-readable output, or an API for researchers and developers to use.
 - [_elfdeps_][elfdeps], a lesser-known Python package that can identify a wheel's required dynamic libraries and _does
   have_ a public API.
-- [PEP 770][seth-pep-770], in which author Seth Larson introduces SBOMs to Python packages. See also his
-  [PR #577][auditwheel-577] to [_auditwheel_][auditwheel], which enables users to discover binary dependencies,
-  and include them in a package's SBOM.
+- [PEP 770][pep-770], in which author Seth Larson [introduces][seth-pep-770] SBOMs to Python packages. See also his [PR
+  #577][auditwheel-577] to [_auditwheel_][auditwheel], which enables users to discover binary dependencies, and include
+  them in a package's SBOM.
 - [PEP 725][pep-725], which specifies a way to record binary dependencies in `pyproject.toml`. This interoperable record
   of binary dependencies could allow many tools to, for example, flag security issues that were previously invisible.
 - [PEP 804][pep-804], which specifies a system for mapping binary dependency names to packages in non-Python registries.
@@ -81,10 +81,12 @@ This file contains references and external resources that inform our analyses.
 [esstra]: https://github.com/sony/esstra
 [fedora-package-info]: https://fedoraproject.org/wiki/Changes/Package_information_on_ELF_objects
 [fromager]: https://github.com/python-wheel-build/fromager
+[how-bindeps-work]: https://vlad.website/how-binary-dependencies-work/
 [insight]: https://dl.acm.org/doi/pdf/10.1145/3551349.3556921
 [libffi]: https://github.com/libffi/libffi
 [npm-bin-pub]: https://sentry.engineering/blog/publishing-binaries-on-npm
 [pep-725]: https://peps.python.org/pep-0725/
+[pep-770]: https://peps.python.org/pep-0770/
 [pep-804]: https://peps.python.org/pep-0804/
 [phantom]: https://www.endorlabs.com/learn/dependency-resolution-in-python-beware-the-phantom-dependency
 [purl-registry]: https://github.com/package-url/purl-registry
